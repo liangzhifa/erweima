@@ -21,8 +21,9 @@ public class QRCodeController {
     @GetMapping("/getImg")
     public void getImg(HttpServletResponse response) {
         String logoImg = "C:\\Users\\tecsun\\Desktop\\微信图片_20200217142612.jpg";
+        String text = "https://space.bilibili.com/184865921/favlist?fid=354333421&ftype=create";
         try {
-            BufferedImage image = QRCodeUtil.createImage("666666666", logoImg, true);
+            BufferedImage image = QRCodeUtil.createImage(text, logoImg, true);
             // 写入返回
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ImageIO.write(image, "jpg", baos);

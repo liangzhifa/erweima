@@ -42,9 +42,9 @@ public class QRCodeUtil {
     //二维码高度,单位：像素pixels
     private static final int QRCODE_HEIGHT = 300;
     //LOGO宽度,单位：像素pixels
-    private static final int LOGO_WIDTH = 100;
+    private static final int LOGO_WIDTH = 80;
     //LOGO高度,单位：像素pixels
-    private static final int LOGO_HEIGHT = 100;
+    private static final int LOGO_HEIGHT = 80;
 
     /**
      * 生成二维码图片

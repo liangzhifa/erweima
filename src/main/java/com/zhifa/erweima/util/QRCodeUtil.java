@@ -38,9 +38,9 @@ public class QRCodeUtil {
     //图片格式
     private static final String FORMAT = "JPG";
     //二维码宽度,单位：像素pixels
-    private static final int QRCODE_WIDTH = 300;
+    private static final int QRCODE_WIDTH = 430;
     //二维码高度,单位：像素pixels
-    private static final int QRCODE_HEIGHT = 300;
+    private static final int QRCODE_HEIGHT = 430;
     //LOGO宽度,单位：像素pixels
     private static final int LOGO_WIDTH = 80;
     //LOGO高度,单位：像素pixels
@@ -176,10 +176,10 @@ public class QRCodeUtil {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        String text = "zhifa666666";
-        String logoImg = "C:\\Users\\tecsun\\Desktop\\微信图片_20200217142612.jpg";
+        String text = "http://wxgzh.zhifa.tech/";
+        String logoImg = "E:\\个人照片\\证件照片.jpg";
         //不含Logo
-        QRCodeUtil.encode(text, null, "D:\\code", "qrcode", true);
+        QRCodeUtil.encode(text, logoImg, "E:\\个人照片\\qrCode", "qrcode", true);
         //含Logo，指定二维码图片名
         //QRCodeUtil.encode(text, "D:\\cloudfish\\app\\aa.jpg", "d:\\cc\\", "qrcode1", true);
         //System.out.println(QRCodeUtil.decode("d:\\cc\\qrcode1.jpg"));
